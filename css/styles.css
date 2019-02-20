@@ -18,7 +18,7 @@ figcaption {
 	background: linear-gradient(
 		rgba(0, 0, 0, 0.65), 
 		rgba(0, 0, 0, 0.65)
-	), url("../img/jumbotron.jpg");
+	), url("../img/test3.jpg");
 	/* background-image: url("../img/jumbotron.jpg"); */
 	background-size: cover;
 	color: #fff;
@@ -77,7 +77,7 @@ img {
 
 .text {
   color: white;
-  font-size: 20px;
+  font-size: 40px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -85,6 +85,7 @@ img {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   text-align: center;
+  text-shadow: 2px 4px 3px rgba(0,0,0,0.3);
 }
 
 .white {
@@ -93,6 +94,27 @@ img {
 
 .blue {
 	color: #16ADE3;
+}
+
+.btn-blue {
+	background-color: #fff;
+	border: 2px solid #16ADE3;
+	color: #16ADE3;
+}
+
+.btn-blue:hover {
+	background-color: #16ADE3;
+	color: #fff;
+}
+
+#contact-btn {
+	border-radius: 20px;
+    text-align: center;
+    padding: 20px 40px;
+    font-size: 1.3em;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .overlay {
@@ -104,7 +126,7 @@ img {
 	background:rgba(0,0,0,0.8);
 	z-index: 2;
   transition: 1s ease-in;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .show {
@@ -112,11 +134,37 @@ img {
   transition: 1s ease-out;
 }
 
-.overlay .content {
+.content {
 	z-index: 3;
+}
+
+.fade-in {
+	animation: fadeIn 1s ease-out;
+}
+
+.fade-out {
+	animation: fadeOut 1s ease-out;
 }
 
 .overlay-img {
 	height: auto;
 	width: 700px
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
 }
