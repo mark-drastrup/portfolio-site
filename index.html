@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/styles.css">
+	<title>Mark Drastrup | Web Developer</title>
+</head>
+
+<body>
+	<header>
+		<div class="jumbotron jumbotron-fluid">
+			<nav class="navbar navbar-expand-lg justify-content-between">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+					<ul class="navbar-nav">
+						<li class="nav-item active white">
+							<a class="nav-link" href="#about-me">About Me <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#personal-projects">Personal Projects</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contact</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<div class="container" id="greeting">
+				<h1 class="display-4 text-center">Hello, my name is <span class="blue">Mark</span></h1>
+				<p class="lead text-center">And I do Web Development</p>
+			</div>
+		</div>
+	</header>
+
+	<div class="container-fluid">
+		<section id="about-me-container">
+			<div class="container">
+				<div id="about-me">
+					<div class="row h-100">
+						<div class="col d-flex flex-column justify-content-center align-items-center">
+							<div>
+								<h1>About <span class="blue">Me</span></h1>
+								<br>
+								<p>I'm a <strong>Web Developer</strong> from Copenhagen, Denmark, currently based in
+									Tokyo,
+									Japan. I love CSS, JavaScript, Vue.js
+									and
+									React.js
+									which grants me the ability to develop compelling front-end, intuitive yet
+									minimalistic
+									interfaces, and
+									engaging designs,
+								</p>
+							</div>
+						</div>
+						<div class="col">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="personal-projects">
+			<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+				<div>
+					<h1><span class="white">Personal</span> <span class="blue">Projects</span></h1>
+					<br>
+					<div class="row">
+						<div class="col">
+							<div class="project" id="mouichido">
+								<img src="./img/mouichido.JPG" alt="Mouichido">
+								<div class="text">Mouichido</div>
+							</div>
+							<div id="mouichido-overlay"
+								class="overlay d-flex justify-content-center align-items-center">
+								<div class="content">
+									<div class="container h-100">
+										<div class="row d-flex justify-content-center align-items-center h-100">
+											<div class="col">
+												<img src="./img/overlays/overlay-mouichido.JPG" alt="Mouichido"
+													class="overlay-img">
+												<figcaption class="white"><strong>Build with:</strong> Vue.js, Vuex,
+													Vuetify, Node.js, Express, Postgresql, Sequelize</figcaption>
+											</div>
+											<div class="col">
+												<p class="white">Mouichido is a tool for learning and reviewing Japanese
+													grammar. It allows the user to make a flashcard, which can be
+													reviewed
+													at a later point. Furthermore the user builds a library of
+													grammarpoints, which can be found through the search function.</p>
+												<a href="https://mouichido-client.herokuapp.com/#/" target="_blank"
+													class="btn btn-primary">VIEW SITE</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="project">
+								<div class="project" id="gamefinder">
+									<img src="./img/gamefinder.jpg" alt="gamefinder">
+									<div class="text">Gamefinder</div>
+								</div>
+							</div>
+							<div id="gamefinder-overlay"
+								class="overlay d-flex justify-content-center align-items-center">
+								<div class="content">
+									<div class="container h-100">
+										<div class="row d-flex justify-content-center align-items-center h-100">
+											<div class="col">
+												<img src="./img/overlays/overlay-gamefinder.JPG" alt="Gamefinder"
+													class="overlay-img">
+												<figcaption class="white"><strong>Build with:</strong> Node.js, Express,
+													EJS, IGDB API
+												</figcaption>
+											</div>
+											<div class="col">
+												<p class="white">Gamefinder lets you search through your favorite
+													videogames
+													or games that you are interested in. Read the summary of the game,
+													watch
+													trailers and get inspired to find you next game in the "You'll might
+													also like" section.</p>
+												<a href="https://game-finder-app.herokuapp.com/" target="_blank"
+													class="btn btn-primary">VIEW SITE</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col">
+							<div class="project">
+								<img src="./img/byduhn.JPG" alt="ByDuhn">
+								<div class="text">ByDuhn</div>
+							</div>
+							<div id="byduhn-overlay" class="overlay d-flex justify-content-center align-items-center">
+								<div class="content">
+									<div class="container h-100">
+										<div class="row d-flex justify-content-center align-items-center h-100">
+											<div class="col">
+												<img src="./img/overlays/overlay-byduhn.JPG" alt="ByDuhn"
+													class="overlay-img">
+												<figcaption class="white"><strong>Build with:</strong> Wordpress, PHP
+												</figcaption>
+											</div>
+											<div class="col">
+												<p class="white">My very first personal project. My friend runs the
+													ByDuhn
+													blog, where she writes about travel, DIY, recipes and sells her
+													artwork.
+												</p>
+												<a href="https://www.byduhn.com/" target="_blank"
+													class="btn btn-primary">VIEW SITE</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col">
+							<div class="project" id="tba">
+								<div class="text">To be announced</div>
+							</div>
+							<!-- <div id="server-overlay" class="overlay d-flex justify-content-center align-items-center">
+							<div class="content">
+								<p class="white">THIS IS OVERLAY INFO ABOUT THE LEFTOVERS PROJECT</p>
+							</div>
+						</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="./js/index.js"></script>
+</body>
+
+</html>
