@@ -4,6 +4,7 @@ body {
 
 a {
 	color: white;
+	transition: 0.4s;
 }
 
 a:hover {
@@ -59,7 +60,7 @@ figcaption {
 	height: 325px;
 	border-radius: 4px;
 	background-color: #16ADE3;
-	/* background-blend-mode: normal; */
+	transition: 0.4s;
 }
 
 img {
@@ -70,17 +71,23 @@ img {
 	transition: .5s ease;
 }
 
-.project img:hover {
+.project img {
 	opacity: 0.5;
+}
+
+.project:hover {
+	background-color: #45c0ed;
 	cursor: pointer;
 }
 
 .text {
-  color: white;
-  font-size: 40px;
+  color: #fff;
+	font-size: 40px;
+	font-weight: 800;
+	letter-spacing: 1.6px;
   position: absolute;
   top: 50%;
-  left: 50%;
+	left: 50%;
   -webkit-transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
