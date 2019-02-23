@@ -1,5 +1,10 @@
+/********** GENERAL STYLING ************/
 body {
 	font-family: 'Lato', sans-serif;
+}
+
+.noscroll {
+	overflow: hidden;
 }
 
 /* a {
@@ -158,6 +163,16 @@ img {
   overflow: hidden;
 }
 
+.overlay-link {
+	background-color: #16ADE3;
+	border: 1px solid #16ADE3;
+}
+
+.overlay-link:hover {
+	background-color: #45c0ed;
+	border: 1px solid #45c0ed;
+}
+
 .show {
   height: 100%;
   transition: 1s ease-out;
@@ -204,7 +219,6 @@ MEDIA QUERIES
 
 @media only screen and (max-width: 576px) {
 	/********** GENERAL STYLING ************/
-
 	.container {
 			-ms-overflow-style: none; 
 	}
@@ -248,5 +262,23 @@ MEDIA QUERIES
 
 	.project {
 		height: 200px;
+	}
+
+	.content {
+		align-self: flex-start;
+		margin-top: 20px;
+	}
+
+	.overlay-img {
+		width: 400px;
+	}
+
+	figcaption {
+		margin-bottom: 20px;
+	}
+
+	.overlay-description {
+		display: flex;
+    flex-direction: column;
 	}
 }
