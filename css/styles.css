@@ -2,12 +2,21 @@ body {
 	font-family: 'Lato', sans-serif;
 }
 
-a {
+/* a {
+	color: white;
+	transition: 0.4s;
+} */
+
+#navigation {
+	background-color: transparent !important;
+}
+
+.navbar-dark .navbar-nav .nav-link {
 	color: white;
 	transition: 0.4s;
 }
 
-a:hover {
+.navbar-dark .navbar-nav .nav-link:hover {
 	color: #16ADE3;
 }
 
@@ -49,6 +58,10 @@ figcaption {
 	), url("../img/personalprojects.jpg");
 	/* background-image: url("../img/personalprojects.jpg"); */
 	background-size: cover;
+}
+
+#personal-projects .container {
+	height: 100vh;
 }
 
 #tba {
@@ -182,5 +195,58 @@ img {
 	}
 	to {
 		opacity: 0;
+	}
+}
+
+/***********************
+MEDIA QUERIES
+***********************/
+
+@media only screen and (max-width: 576px) {
+	/********** GENERAL STYLING ************/
+
+	.container {
+			-ms-overflow-style: none; 
+	}
+
+	.container::-webkit-scrollbar { 
+			display: none;
+			width: 0;
+	}
+
+	.col-sm-hide {
+		display:none;
+	}
+
+	/********** JUMBOTRON STYLING ************/
+
+	#navigation {
+		border: 1px solid #343a40 !important;
+	}
+
+	.nav-link {
+		text-align: center;
+	}
+
+	#greeting {
+		margin-top: 200px;
+	}
+
+	/********** ABOUT ME STYLING ************/
+	#about-me-container {
+		background-image: none;
+	}
+
+	#about-me {
+		text-align: center;
+	}
+
+	/********** PERSONAL PROJECTS STYLING ************/
+	#personal-projects .container {
+		height: 120vh;
+	}
+
+	.project {
+		height: 200px;
 	}
 }

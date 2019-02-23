@@ -15,7 +15,7 @@
 <body>
 	<header>
 		<div class="jumbotron jumbotron-fluid">
-			<nav class="navbar navbar-expand-lg justify-content-between">
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-end" id="navigation">
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
 					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
@@ -46,7 +46,7 @@
 			<div class="container">
 				<div id="about-me">
 					<div class="row h-100">
-						<div class="col d-flex flex-column justify-content-center align-items-center">
+						<div class="col-sm-12 col-md-6 d-flex flex-column justify-content-center align-items-center">
 							<div>
 								<h1>About <span class="blue">Me</span></h1>
 								<br>
@@ -59,7 +59,7 @@
 								</p>
 							</div>
 						</div>
-						<div class="col">
+						<div class="col-sm-hide col-md-6">
 
 						</div>
 					</div>
@@ -68,12 +68,12 @@
 		</section>
 
 		<section id="personal-projects">
-			<div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+			<div class="container d-flex justify-content-center align-items-center">
 				<div>
 					<h1><span class="white">Personal</span> <span class="blue">Projects</span></h1>
 					<br>
 					<div class="row">
-						<div class="col">
+						<div class="col-sm-12 col-md-6 mb-4 mb-md-0">
 							<div class="project" id="mouichido">
 								<img src="./img/mouichido.JPG" alt="Mouichido">
 								<div class="text">Mouichido</div>
@@ -103,7 +103,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col">
+						<div class="col-sm-12 col-md-6">
 							<div class="project">
 								<div class="project" id="gamefinder">
 									<img src="./img/gamefinder.jpg" alt="gamefinder">
@@ -140,7 +140,7 @@
 					</div>
 					<br>
 					<div class="row">
-						<div class="col">
+						<div class="col-sm-12 col-md-6">
 							<div class="project">
 								<img src="./img/byduhn.JPG" alt="ByDuhn">
 								<div class="text">ByDuhn</div>
@@ -169,7 +169,7 @@
 								</div>
 							</div>
 						</div>
-						<div class="col">
+						<div class="col-sm-hide col-md-6">
 							<div class="project" id="tba">
 								<div class="text">Coming soon</div>
 							</div>
@@ -195,6 +195,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js"
 		integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 	<script src="./js/index.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 
 </html>
