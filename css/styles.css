@@ -199,6 +199,12 @@ img {
   width: 400px;
 }
 
+.socialmedia__icon {
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
